@@ -1,0 +1,30 @@
+﻿<Window x:Class="TactorMatching3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TactorMatching3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="323*"/>
+            <ColumnDefinition Width="103*"/>
+            <ColumnDefinition Width="366*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="BtnPanLeft" Content="1. Pan-Left" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="82,60,0,0" Height="58" Click="BtnPanLeft_Click" RenderTransformOrigin="0.908,0.648"/>
+        <Button x:Name="BtnPanAll" Content="3. Pan-All" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="82,146,0,0" Height="58" Click="BtnPanAll_Click" RenderTransformOrigin="0.908,0.648"/>
+        <Button x:Name="BtnPanToRight" Content="5. Pan-To-Right" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="82,245,0,0" Height="58" Click="BtnPanToRight_Click" RenderTransformOrigin="0.908,0.648"/>
+        <Button x:Name="BtnPanRight" Content="2. Pan-Right" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="222,60,0,0" Height="58" Click="BtnPanRight_Click" RenderTransformOrigin="0.908,0.648"/>
+        <Button x:Name="BtnPanToLeft" Content="4. Pan-To-Left" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="222,146,0,0" Height="58" Click="BtnPanToLeft_Click" RenderTransformOrigin="0.908,0.648"/>
+        <Button x:Name="BtnPanToBack" Content="6. Pan-To-Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="222,245,0,0" Height="58" Click="BtnPanToBack_Click" RenderTransformOrigin="0.908,0.648"/>
+        <Button x:Name="BtnBackLeft" Content="7. Back-Left" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="57,60,0,0" Height="58" Click="BtnBackLeft_Click" RenderTransformOrigin="0.908,0.648" Grid.Column="2"/>
+        <Button x:Name="BtnBackAll" Content="9. Back-All" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="57,146,0,0" Height="58" Click="BtnBackAll_Click" RenderTransformOrigin="0.908,0.648" Grid.Column="2"/>
+        <Button x:Name="BtnBackToRight" Content="11. Back-To-Right" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="57,245,0,0" Height="58" Click="BtnBackToRight_Click" RenderTransformOrigin="0.908,0.648" Grid.Column="2"/>
+        <Button x:Name="BtnBackRight" Content="8. Back-Right" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="199,60,0,0" Height="58" Click="BtnBackRight_Click" RenderTransformOrigin="0.908,0.648" Grid.Column="2"/>
+        <Button x:Name="BtnBackToLeft" Content="10. Back-To-Left" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="199,146,0,0" Height="58" Click="BtnBackToLeft_Click" RenderTransformOrigin="0.908,0.648" Grid.Column="2"/>
+        <Button x:Name="BtnBackToBack" Content="12. Back-To-Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="199,245,0,0" Height="58" Click="BtnBackToBack_Click" RenderTransformOrigin="0.908,0.648" Grid.Column="2"/>
+        <Button x:Name="BtnBaseline" Content="Baseline&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="31,318,0,0" Height="58" Click="BtnBaseline_Click" RenderTransformOrigin="0.908,0.648" Grid.ColumnSpan="2" Grid.Column="1"/>
+
+    </Grid>
+</Window>
