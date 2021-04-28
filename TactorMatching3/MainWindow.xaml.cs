@@ -107,13 +107,9 @@ namespace TactorMatching3
                 }
                 else
                 {
-                    for (int x = 0; x < 3; x++)
+                    foreach(int t in tactors)
                     {
-                        Pulse(0, tactors[x], DURATION_MS - DELAY_MS * x, DELAY_MS * x);
-                    }
-                    for (int y = 3; y < 6; y++)
-                    {
-                        Pulse(0, tactors[y], DURATION_MS - DELAY_MS * y, DELAY_MS * y);
+                        Pulse(0, t, DURATION_MS, 0);
                     }
                 }
             }
@@ -121,7 +117,7 @@ namespace TactorMatching3
             {
                 foreach(int t in tactors)
                 {
-                    Pulse(0, t, 215, 0);
+                    Pulse(0, t, 645, 0);
                 }
             }
         }
