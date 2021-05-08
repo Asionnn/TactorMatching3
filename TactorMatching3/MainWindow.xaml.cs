@@ -102,14 +102,15 @@ namespace TactorMatching3
                 {
                     for(int x = 0; x < 3; x++)
                     {
-                        Pulse(0, tactors[x], DURATION_MS - DELAY_MS * x, DELAY_MS * x);
+                        Pulse(0, tactors[x], DURATION_MS, DURATION_MS * x);
                     }
                 }
                 else
                 {
-                    foreach(int t in tactors)
+                    for(int x = 0; x < 3; x++)
                     {
-                        Pulse(0, t, DURATION_MS, 0);
+                        Pulse(0, tactors[x], DURATION_MS, DURATION_MS * x);
+                        Pulse(0, tactors[x + 3], DURATION_MS, DURATION_MS * x);
                     }
                 }
             }
